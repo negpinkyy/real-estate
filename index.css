@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: lavender;
+}
+.nav-responsive{
+    display: flex;
+    position: sticky;
+    width: 100%;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.8rem 0rem;
+}
+.logo{
+    width: 6rem;
+    min-height: 4rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+.navbar-nav{
+    margin-left: 300px;
+    align-items: center;
+}
+.nav-item{
+    margin-left: 50px;
+    align-items: center;
+}
+.nav-search{
+    width: 50vw;
+    position: relative;
+    margin: 0 auto;
+}
+#search{
+    width: 50vw;
+    outline: none;
+    font-size: 1-3rem;
+    padding: 0.2rem 2rem 0.2rem 1rem;
+    border-radius: 1rem;
+    border: none; 
+}
+#find{
+    position: absolute;
+    top: 0.3rem;
+    font-size: 1.3rem;
+    right: 0.5rem;
+    color: rgb(184, 140, 140);
+    background: transparent;
+}
+
+.access a{
+    color: rgb(73, 73, 70);
+    padding: 0 0.8rem;
+    font-size: 1.5rem;
+    margin-right: 10%;
+}
+#notification{
+   position:relative ; 
+}  
+#account{
+    display: none;
+}
+#account i{
+    font-size: 2.2rem;
+}
+/* main section */
+#home{
+    background-color: rgb(4, 56, 56);
+    margin-top: 7% ;
+    width: 100%;
+    height: 50vh;
+
+}
+
+.home{
+    margin-left: 25%;
+}
+.leading__ultra{
+	color: #fff;
+	font-size: 3rem;
+	margin: 50px;
+	word-spacing: 25px;
+	letter-spacing: 2px;
+	margin-left: 150px;
+}
+
+.leading__ultra__span{
+
+font-weight: 900;
+}
+
+.btn__primary__info{
+	border: 2px solid #BFC3C3;
+	border-radius: 10px;
+	color: rgb(56, 216, 245);
+	width: 200px;
+	height: 40px;
+	margin-left: 200px;
+    position: absolute;
+   font-size: 1.2rem;
+   background-color: transparent;
+}
+
+.btn__primary__info:hover{
+	background-color: #A6A5A1;
+	color:#C3D1DB;
+}
+
+.container{
+	display: flex;
+justify-content: center;
+align-content: center;
+position: relative;
+flex-wrap: wrap;
+}
+
+.container .hexagon{
+	position: relative;
+	width: 300px;
+	height: 350px;
+	margin: 50px 20px 70px;
+	cursor: pointer;
+}
+
+.container .hexagon::before{
+	content: '';
+	bottom: -70px;
+	width: 100%; 
+	height: 60px;
+	position: absolute;
+	background: radial-gradient(rgba(0,0,0,0.15),transparent,transparent);
+	border-radius: 50%;
+	transition: 0.1s;
+}
+
+.container .hexagon:hover::before{
+	opacity: 0.8;
+	transform: scale(0.8);
+}
+
+.container .hexagon .shape{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #000;
+clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+transition: 0.1s;
+}
+
+.container .hexagon .shape:hover{
+	transform: translateY(-30px)
+}
+
+.container .hexagon .shape img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container .hexagon .shape .content .content2{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	margin-top: 180px;
+}
+
+.container .hexagon .shape .content .content2 h2{
+	position: absolute;
+	margin-top: -80px;
+	left: 80px;
+
+}
+.container .hexagon .shape .content .content2 p{
+	margin-top: -30px;
+}
+
+.btn__info{
+	position: absolute;
+	margin-top: 80px;
+	left: 100px;
+	color: #fff;
+}
+.container .hexagon .shape .content{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-content: center;
+text-align: center;
+/*padding: 20px;*/
+background: linear-gradient(45deg, #03a9f4,rgba(0,0,0,0.7));
+color: #fff;
+opacity: 0;
+transition: 0.5s;
+}
+
+.container .hexagon:hover .shape .content{
+opacity: 1;
+}
+.leading__header{
+	color: #fff;
+	/*font-size: 2.5rem;*/
+	margin-top: 100px;
+	margin-left: 150px; 
+	
+}
+
+
+
+.card__one{
+    width: 100%;
+    height: 50vh;
+    margin-left: 5%;
+}
+.card-header{
+    width: 100%;
+}
+
+#main{
+    margin-top: 5rem;
+}
+#categories{
+    margin: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50.2rem;
+    width: 100vw;
+    padding: 0.5rem 0.3rem;
+    background: rgba(253, 253, 253, 0.9);
+}
+#brand{
+width: 4rem;
+text-align: center;
+margin-left: 1rem;
+cursor: pointer;
+}
+.image-container{
+height: 17.2rem;
+width: 18.2rem;
+background:rgba(0, 128,128,0.27) ;
+border-radius: 50%;
+position: relative;
+margin-left: 2.5rem;
+}
+.brand-image{
+    height: 15.2rem;
+    width: 10.2rem;
+    position: relative;
+    /* top: 2.5rem; */
+    margin: 1rem 3.9rem;
+    text-align: center;
+    border-radius: 2rem;
+    }
+#brand-name{
+    font-family: sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0.6rem;
+    color: teal;
+}
+
+.footer__container{
+    background-color: rgb(116,116,116);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 80vh;	
+    }
+    
+    .footer__header{
+        font-size: 2rem;
+        color: #BFC3C3;
+        margin: 50px;
+    }
+    
+    .footer__global{
+        background-color: #71706f;
+        padding: 8px;
+        position: absolute;
+        color: #A6A5A1;
+        font-size: 1.5rem;
+    }
+    
+    .shape1{
+        border-top: 21px solid #71706f;
+        border-left: 21px solid transparent;
+        border-right: 21px solid transparent;
+        width: 0;
+        height: 0;
+        margin: 14.2% -0.3%;
+    }
+    
+    .para__footer{
+        color: #A6A5A1;
+    }
+    
+    .footer__line{
+        background-color:#A6A5A1;
+        width: 80%;
+        height: 0.3%;
+        position: relative;
+        margin-left: 10%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .footer__copy{
+        margin: 5%;
+        color: #A6A5A1;
+    }
+    
+    @media (max-width: 1200px){
+    
+    .home{
+        margin-left: 3%;
+    }
+   #contact{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       position: absolute;
+       /* top: 0; */
+       left: 0;
+       /* bottom: 0; */
+   }
+
+   .contacts{
+       display: flex;
+       flex-direction: column;
+   }
+    
+    }
+    
+    
